@@ -39,7 +39,7 @@
 
     <name>storage-helper</name>
     <description>This java library used for helping upload file </description>
-    <url>https://github.com/seyeadamaUASZ/storage-helper</url>
+    <url>https://github.com/misterseye/storage-helper</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -114,17 +114,17 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git://github.com/seyeadamaUASZ/storage-helper.git</connection>
-        <developerConnection>scm:git:ssh://github.com/seyeadamaUASZ/storage-helper.git</developerConnection>
-        <url>https://github.com/seyeadamaUASZ/storage-helper</url>
+        <connection>scm:git:git://github.com/misterseye/storage-helper.git</connection>
+        <developerConnection>scm:git:ssh://github.com/misterseye/storage-helper.git</developerConnection>
+        <url>https://github.com/misterseye/storage-helper</url>
     </scm>
 
     <developers>
         <developer>
             <name>SEYE Adama</name>
-            <email>seyeadama52@yahoo.com</email>
+            <email>seyeadam1@gmail.com</email>
             <organization>io.github.misterseye</organization>
-            <organizationUrl>https://github.com/seyeadamaUASZ</organizationUrl>
+            <organizationUrl>https://github.com/misterseye</organizationUrl>
         </developer>
     </developers>
 
