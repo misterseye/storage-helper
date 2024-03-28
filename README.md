@@ -1,6 +1,6 @@
 Storage helper est une librairie Java permettant de gérer les processus
-de téléchargement de fichier en gérant différentes extensions   (.pdf,.jpg,.jpeg,
-.png,.xlsx,.docx)
+de téléchargement de fichier en gérant différentes extensions **(****.pdf,.jpg,.jpeg,
+.png,.xlsx,.docx)**
 
 Dépendance maven à ajouter sur le pom.xml:  
 
@@ -28,7 +28,7 @@ Seul bémol, il faut ajouter le scan du package principal de votre projet pour l
 
 On fait appel au service FileStorageHandle contenant différentes méthodes de signature :  
 .`public DocumentInfoResponse storeFile(String baseUrl,Optional<MultipartFile> file);` :  
-cette méthode prend une baseUrl et un optional file pour vérifier la présence du fichier pour le process
+cette méthode prend une **baseUrl** et un optional **file** pour vérifier la présence du fichier pour le process
 le baseUrl est utilisé pour matcher un url d'accés de votre fichier au niveau de base de données.  
 exemple de baseUrl: `http://localhost:8080`
 
@@ -80,3 +80,16 @@ produces = MediaType.APPLICATION_JSON_VALUE)
 public DocumentInfoResponse upload(@RequestParam("file") MultipartFile file){
 return fileStorageHandler.storeFile(file);
 }`
+
+
+Le format de réponse de **DocumentInfoResponse**:  
+
+`private String fileName;`  
+`private String contentType;`
+`private String fileAccessUri;`
+`private String typeDocument;`
+
+**fileName :** nom du fichier  
+**contentType :** type de format du contenu
+**fileAcessURI :** url d'acces du fichier depuis le serveur (en général à persister à la base)
+**typeDocument:** type de document (facultatif)
