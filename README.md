@@ -90,6 +90,6 @@ Le format de réponse de **DocumentInfoResponse**:
 `private String typeDocument;`
 
 **fileName :** nom du fichier  
-**contentType :** type de format du contenu
+**contentType :** type de format du contenu  
 **fileAcessURI :** url d'acces du fichier depuis le serveur (en général à persister à la base)  
 **typeDocument:** type de document (facultatif)
